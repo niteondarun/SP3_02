@@ -41,7 +41,12 @@ namespace SP3_02
 
         private void btn_Square_Click_Click(object sender, EventArgs e)
         {
-
+            shape = 1;      //Tells paint to draw a square
+            int size = int.Parse(TxtBox_SizeInput_Type.Text);
+            int x = int.Parse(textBox1.Text);
+            int y = int.Parse(textBox2.Text);
+            Rectangle z = new Rectangle(x, y, size, size);
+            panel2.Invalidate(z);
         }
 
         private void btn_Square_Click_Paint(object sender, PaintEventArgs e)
@@ -78,12 +83,7 @@ namespace SP3_02
         //added trying to figure stuff out, have to keep it. probably wont use it
         private void btn_Rectangle_Click_Paint(object sender, PaintEventArgs e)
         {
-            shape = 1;      //Tells paint to draw a rectangle
-            int size = int.Parse(TxtBox_SizeInput_Type.Text);
-            int x = int.Parse(textBox1.Text);
-            int y = int.Parse(textBox2.Text);
-            Rectangle z = new Rectangle(x, y, size, size);
-            panel2.Invalidate(z);
+
         }
     }
 }
