@@ -62,7 +62,6 @@
             this.btn_Square_Click.Text = "Square";
             this.btn_Square_Click.UseVisualStyleBackColor = false;
             this.btn_Square_Click.Click += new System.EventHandler(this.btn_Square_Click_Click);
-            this.btn_Square_Click.Paint += new System.Windows.Forms.PaintEventHandler(this.btn_Square_Click_Paint);
             // 
             // btn_Rectangle_Click
             // 
@@ -74,7 +73,6 @@
             this.btn_Rectangle_Click.TabIndex = 1;
             this.btn_Rectangle_Click.Text = "Rectangle";
             this.btn_Rectangle_Click.UseVisualStyleBackColor = false;
-            this.btn_Rectangle_Click.Paint += new System.Windows.Forms.PaintEventHandler(this.btn_Rectangle_Click_Paint);
             // 
             // btn_Circle_Click
             // 
@@ -97,6 +95,7 @@
             this.btn_Triangle_Click.TabIndex = 3;
             this.btn_Triangle_Click.Text = "Triangle";
             this.btn_Triangle_Click.UseVisualStyleBackColor = false;
+            this.btn_Triangle_Click.Click += new System.EventHandler(this.btn_Triangle_Click_Click);
             // 
             // btn_Diamond_Click
             // 
@@ -117,8 +116,9 @@
             this.btn_Trapezoid_Click.Name = "btn_Trapezoid_Click";
             this.btn_Trapezoid_Click.Size = new System.Drawing.Size(88, 46);
             this.btn_Trapezoid_Click.TabIndex = 5;
-            this.btn_Trapezoid_Click.Text = "Trapezoid";
+            this.btn_Trapezoid_Click.Text = "Circle";
             this.btn_Trapezoid_Click.UseVisualStyleBackColor = false;
+            this.btn_Trapezoid_Click.Click += new System.EventHandler(this.btn_Trapezoid_Click_Click);
             // 
             // panel_Background
             // 
