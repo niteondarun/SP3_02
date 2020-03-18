@@ -73,6 +73,7 @@
             this.btn_Rectangle_Click.TabIndex = 1;
             this.btn_Rectangle_Click.Text = "Rectangle";
             this.btn_Rectangle_Click.UseVisualStyleBackColor = false;
+            this.btn_Rectangle_Click.Click += new System.EventHandler(this.btn_Rectangle_Click_Click);
             // 
             // btn_Circle_Click
             // 
