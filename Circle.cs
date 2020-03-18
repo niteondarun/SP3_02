@@ -6,8 +6,23 @@ using System.Threading.Tasks;
 
 namespace SP3_02
 {
-    class Circle
+    class Circle : Shape
     {
-        //added for testing github
+        private string shapeType;
+
+        public Circle(int size, int rColor, int gColor, int bColor) : base(size, rColor, gColor, bColor)
+        {
+            SetShapeType();
+        }
+
+        public string GetShapeType()
+        {
+            return shapeType;
+        }
+
+        public void SetShapeType()
+        {
+            shapeType = "Circle";
+        }
     }
 }
